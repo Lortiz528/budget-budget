@@ -34,7 +34,7 @@ function TransactionDetails() {
     <div className="trans-details">
       <ul>
         <h2>{transaction.item_name}</h2>
-        <li> Amount: ${transaction.amount}</li>
+        <li> Amount: $ {transaction.amount}</li>
         <li> Transaction Date: {transaction.date}</li>
         <li>Transaction category: {transaction.category}</li>
         <li>Transaction Type: {transaction.type}</li>
