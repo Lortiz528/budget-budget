@@ -1,5 +1,5 @@
 function TransactionNewForm() {
-  return <div>create new transaction placeholder</div>;
+  return <div>new transaction form placeholder</div>;
 }
 
 export default TransactionNewForm;
