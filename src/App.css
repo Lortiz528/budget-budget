@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.nav {
+  border: 12px solid lightblue;
+  background-color: aqua;
+  text-align: center;
+  padding-bottom: 3%;
+}
