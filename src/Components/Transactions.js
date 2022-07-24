@@ -35,9 +35,22 @@ function Transactions() {
     return sum;
   };
 
+  const bankAccountSum = getTotal();
+
+  const accountColor = (bankAccountSum) => {
+    if (bankAccountSum >= 0) {
+      return 'green';
+    } else {
+      return 'red';
+    }
+  };
+
   return (
     <div>
-      <h1>Bank Account Total: ${getTotal()} </h1>
+      <h1>
+        Bank Account Total:{' '}
+        <span className={accountColor(bankAccountSum)}>${bankAccountSum}</span>{' '}
+      </h1>
       <ul>{transactionsList}</ul>
     </div>
   );
