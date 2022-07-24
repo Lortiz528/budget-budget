@@ -22,7 +22,7 @@ function TransactionEditForm() {
       ...transaction,
       [event.target.id]: event.target.value,
     });
-    console.log('target.id :', event.target.id);
+    //console.log('target.id :', event.target.id);
   };
 
   useEffect(() => {

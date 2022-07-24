@@ -15,14 +15,12 @@ function Transactions() {
 
   const transactionsList = transactions.map((transaction, index) => {
     return (
-      <li key={index}>
-        <Link to={`/transactions/${index}`}>
-          <h3>{transaction.item_name}</h3>
-        </Link>
-        <p>
-          <strong>Amount: </strong>${transaction.amount}
-        </p>
+      <li className="transaction-li" key={index}>
         <p>{transaction.date}</p>
+        <Link to={`/transactions/${index}`}>
+          <p>{transaction.item_name}</p>
+        </Link>
+        <p>${transaction.amount}</p>
       </li>
     );
   });
@@ -38,8 +36,10 @@ function Transactions() {
   const bankAccountSum = getTotal();
 
   const accountColor = (bankAccountSum) => {
-    if (bankAccountSum >= 0) {
+    if (bankAccountSum >= 1000) {
       return 'green';
+    } else if (bankAccountSum >= 0) {
+      return 'blue';
     } else {
       return 'red';
     }
@@ -49,9 +49,9 @@ function Transactions() {
     <div>
       <h1>
         Bank Account Total:{' '}
-        <span className={accountColor(bankAccountSum)}>${bankAccountSum}</span>{' '}
+        <span className={accountColor(bankAccountSum)}>${bankAccountSum}</span>
       </h1>
-      <ul>{transactionsList}</ul>
+      <ul className="transaction-ul">{transactionsList}</ul>
     </div>
   );
 }

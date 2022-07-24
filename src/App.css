@@ -37,12 +37,12 @@
   }
 }
 
-.nav {
+/* .nav {
   border: 12px solid lightblue;
   background-color: aqua;
   text-align: center;
   padding-bottom: 3%;
-}
+} */
 
 .green {
   color: green;
@@ -50,4 +50,20 @@
 
 .red {
   color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+body {
+  background-image: url('https://cdn.pixabay.com/photo/2018/12/06/16/12/birds-3860034_960_720.jpg');
+  background-size: cover;
+}
+
+
+
+.transaction-li{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
 }
