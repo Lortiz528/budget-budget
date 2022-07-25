@@ -67,3 +67,16 @@ body {
   display: grid;
   grid-template-columns: repeat(3,1fr);
 }
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+img {
+  height: 400px
+}
+
+.home-header{
+  font-family: 'Courier New', Courier, monospace;
+}
