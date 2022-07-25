@@ -114,7 +114,7 @@ function TransactionEditForm() {
         />
         <br />
 
-        <input type="submit" />
+        <input className="submit" type="submit" />
       </form>
       <Link to={`/transactions/${index}`}>
         <button>Nevermind!</button>
