@@ -35,7 +35,7 @@ function TransactionNewForm() {
   };
 
   return (
-    <div>
+    <div className="new-tran">
       <form onSubmit={handleSubmit}>
         <label htmlFor="item_name">Item Name: </label>
         <input
@@ -101,7 +101,7 @@ function TransactionNewForm() {
         />
         <br />
 
-        <input type="submit" />
+        <input className="submit" type="submit" />
       </form>
       <Link to={`/transactions`}>
         <button>Cancel</button>

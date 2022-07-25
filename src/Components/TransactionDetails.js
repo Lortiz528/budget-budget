@@ -15,7 +15,7 @@ function TransactionDetails() {
         setTransaction(res.data);
       })
       .catch(() => {
-        navigate('/not found');
+        navigate('/not-found');
       });
   }, [index, navigate]);
 
@@ -26,16 +26,16 @@ function TransactionDetails() {
         navigate('/transactions');
       })
       .catch(() => {
-        console.warn('error');
+        navigate('/not-found'); // or maybe res.send("deletion error!")
       });
   };
 
   return (
-    <div className="trans-details">
-      <ul>
+    <div>
+      <ul className="trans-details">
         <h2>{transaction.item_name}</h2>
-        <li> Amount: $ {transaction.amount}</li>
         <li> Transaction Date: {transaction.date}</li>
+        <li> Amount: $ {transaction.amount}</li>
         <li>Transaction category: {transaction.category}</li>
         <li>Transaction Type: {transaction.type}</li>
       </ul>
