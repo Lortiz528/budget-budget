@@ -30,7 +30,7 @@ function Transactions() {
     for (let tran of transactions) {
       sum += Number(tran.amount);
     }
-    return sum;
+    return sum.toFixed(2);
   };
 
   const bankAccountSum = getTotal();

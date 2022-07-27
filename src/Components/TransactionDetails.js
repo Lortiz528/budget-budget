@@ -36,6 +36,7 @@ function TransactionDetails() {
         <h2>{transaction.item_name}</h2>
         <li> Transaction Date: {transaction.date}</li>
         <li> Amount: $ {transaction.amount}</li>
+        <li>From: {transaction.from}</li>
         <li>Transaction category: {transaction.category}</li>
         <li>Transaction Type: {transaction.type}</li>
       </ul>

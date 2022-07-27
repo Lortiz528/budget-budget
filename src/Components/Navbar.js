@@ -12,6 +12,9 @@ function Navbar() {
       <Link to="/transactions/new">
         <div>New Transaction</div>
       </Link>
+      <Link to="/about">
+        <div>About</div>
+      </Link>
     </nav>
   );
 }

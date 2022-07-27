@@ -1,49 +1,14 @@
 .App {
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
+  list-style: none;
+  font-weight: bold;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-/* .App-link {
-  color: #61dafb;
-} */
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-/* .nav {
-  border: 12px solid lightblue;
-  background-color: aqua;
-  text-align: center;
-  padding-bottom: 3%;
-} */
 
 .green {
   color: green;
@@ -58,36 +23,32 @@
 }
 
 body {
-  background-image: url('https://img1.goodfon.com/wallpaper/nbig/f/31/dengi-sostoyanie-fig-lapsha.jpg');
-  background-size: auto;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnG4mnrHcn0SAkjTXfaY_E4EaJq_K_p_Mx59eqAkY2FirAvP_up0e10ywDda_wYUhC2v0&usqp=CAU');
+  background-size: contain;
 }
-
 
 
 .transaction-li{
   display: grid;
   grid-template-columns: repeat(3,1fr);
+  border: 1px solid green;
+  margin: 1%;
+  padding: 2%;
+ 
 }
 
 .nav {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  font-weight: bold;
-margin-top: 2%;
+  grid-template-columns: repeat(4,1fr);
+
+  margin-top: 2%;
+
 }
 
-/* img {
-  width: 300px
-} */
 
-.home-header{
-  font-family: 'Courier New', Courier, monospace;
-}
 
 button {
 background-color: bisque;
-font-weight: bold;
-font-family: 'Courier New', Courier, monospace;
 }
 
 .showNavigation{
@@ -106,6 +67,19 @@ font-family: 'Courier New', Courier, monospace;
 
 .submit{
   background-color: bisque;
-  font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.profile{
+  height: 200px;
+}
+
+
+.bio{
+  text-align: center;
+}
+
+.bioList{
+  list-style: none;
 }

@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom'
+
 function FourOFour() {
   return (
     <div className="error-page">
@@ -6,6 +8,8 @@ function FourOFour() {
         alt="error"
       ></img>
       <h1>Error!!!! Page Not Found</h1>
+
+      <Link to="/">Return Home</Link>
     </div>
   );
 }
