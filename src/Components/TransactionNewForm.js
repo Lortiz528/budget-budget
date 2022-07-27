@@ -65,7 +65,7 @@ function TransactionNewForm() {
           value={transaction.date}
           onChange={handleTextChange}
           required
-          placeholder="EX: 7/28/2022"
+          
         />
         <br />
         <label htmlFor="from">From: </label>

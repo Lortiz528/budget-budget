@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
+import { FaUndo } from 'react-icons/fa';
 import axios from 'axios';
 
 const API = process.env.REACT_APP_API_URL;
 
 function TransactionEditForm() {
+  const undo = FaUndo();
   const navigate = useNavigate();
   let { index } = useParams();
 
@@ -117,7 +119,7 @@ function TransactionEditForm() {
         <input className="submit" type="submit" />
       </form>
       <Link to={`/transactions/${index}`}>
-        <button>Nevermind!</button>
+        <button>Nevermind! {undo}</button>
       </Link>
     </div>
   );
