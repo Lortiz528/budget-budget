@@ -1,3 +1,9 @@
+Netlify URL: https://luis-budget-manager.netlify.app
+
+Backend repo: https://github.com/Lortiz528/Luis-backend-budget
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
