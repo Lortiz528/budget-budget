@@ -73,7 +73,7 @@ function TransactionEditForm() {
         <label htmlFor="date">Date: </label>
         <input
           id="date"
-          type="text"
+          type="date"
           name="date"
           value={transaction.date}
           onChange={handleTextChange}
