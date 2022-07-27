@@ -1,8 +1,11 @@
+import { FaRegGrinAlt, FaRegHandPointDown } from 'react-icons/fa';
+
 export default function About() {
- 
+  const smiley = FaRegGrinAlt();
+  const pointer = FaRegHandPointDown();
   return (
     <div className="aboutpage">
-      <h2>About Me</h2>
+      <h2>About Me {smiley}</h2>
       <hr></hr>
       <div>
         <h3>Luis Ortiz</h3>
@@ -12,18 +15,22 @@ export default function About() {
           alt="Luis"
         />
         <p className="bio">
-          I am a full stack developer with a background in Logistics/transportation.
-          I have a passion for wildlife, space exploration, and baseball. Talk to me about:
-          <ul className="bioList">
-            <li>The Mets!</li>
-            <li>Any BBC Nature docu-series</li>
-            <li>James Webb Telescope</li>
-            <li>UFOs</li>
-            <li>Side hustle ideas</li>
-            <li>retro video games</li>
-            <li>Road Trips</li>
-          </ul>
+          I am a full stack developer with a background in
+          Logistics/transportation. I have a passion for wildlife, space
+          exploration, and baseball. 
+          <br/>
+          <br/>
+          {pointer} Talk to me about: {pointer}
         </p>
+        <ul className="bioList">
+          <li>The Mets!</li>
+          <li>Any BBC Nature docu-series</li>
+          <li>James Webb Telescope</li>
+          <li>UFOs</li>
+          <li>Side hustle ideas</li>
+          <li>retro video games</li>
+          <li>Road Trips</li>
+        </ul>
         <div className="links">
           <a className="github" href="https://github.com/Lortiz528">
             GitHub

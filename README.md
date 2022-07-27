@@ -1,10 +1,6 @@
 # Budget-Budget
 
-<hr/>
-
 # Links Below
-
-<hr/>
 
 - [Frontend Site](https://luis-budget-manager.netlify.app)
 - [Backend](https://luis-budget-backend-app.herokuapp.com)
