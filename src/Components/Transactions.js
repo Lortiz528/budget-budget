@@ -46,7 +46,7 @@ function Transactions() {
   };
 
   return (
-    <div>
+    <div className='transaction-page'>
       <h1>
         Bank Account Total:{' '}
         <span className={accountColor(bankAccountSum)}>${bankAccountSum}</span>

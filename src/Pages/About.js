@@ -17,9 +17,9 @@ export default function About() {
         <p className="bio">
           I am a full stack developer with a background in
           Logistics/transportation. I have a passion for wildlife, space
-          exploration, and baseball. 
-          <br/>
-          <br/>
+          exploration, and baseball.
+          <br />
+          <br />
           {pointer} Talk to me about: {pointer}
         </p>
         <ul className="bioList">
@@ -33,7 +33,13 @@ export default function About() {
         </ul>
         <div className="links">
           <a className="github" href="https://github.com/Lortiz528">
-            GitHub
+            <img
+              align="center"
+              src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+              height="75"
+              width="75"
+              alt="github"
+            />
           </a>
 
           <p>

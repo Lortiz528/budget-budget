@@ -19,14 +19,23 @@
 }
 
 .blue {
-  color: blue;
+  color: darkgrey;
 }
 
-body {
+/* body {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnG4mnrHcn0SAkjTXfaY_E4EaJq_K_p_Mx59eqAkY2FirAvP_up0e10ywDda_wYUhC2v0&usqp=CAU');
   background-size: contain;
+} */
+
+body{
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/287/77/179/money-minimalism-wallpaper-preview.jpg");
+  background-size: auto;
 }
 
+.transaction-page{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTThxlcvNbrVu50x5DWjoNmMaK3_kIQNu_CAKHg1zMBXXS6tP5bNwwrWQsSco-o8tz3uY&usqp=CAU');
+  background-size: contain;
+}
 
 .transaction-li{
   display: grid;
@@ -35,6 +44,10 @@ body {
   margin: 1%;
   padding: 2%;
  
+}
+
+.detail-page{
+  border: 1 px solid black;
 }
 
 .nav {
@@ -59,6 +72,8 @@ background-color: bisque;
 .trans-details{
   list-style: none;
   width: auto;
+  border: 1px solid bisque;
+  background-color: whitesmoke;
 }
 
 .new-tran input{
@@ -72,7 +87,7 @@ background-color: bisque;
 
 
 .profile{
-  height: 200px;
+  height: 250px;
 }
 
 
@@ -82,4 +97,9 @@ background-color: bisque;
 
 .bioList{
   list-style: none;
+}
+
+.links{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
 }

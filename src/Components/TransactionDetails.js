@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
-import { FaTrashAlt, FaEdit, FaUndo  } from 'react-icons/fa';
+import { FaTrashAlt, FaEdit, FaUndo } from 'react-icons/fa';
 const API = process.env.REACT_APP_API_URL;
 
 function TransactionDetails() {
   const trash = FaTrashAlt();
-  const edit= FaEdit()
-  const undo = FaUndo()
+  const edit = FaEdit();
+  const undo = FaUndo();
   const [transaction, setTransaction] = useState([]);
   let { index } = useParams();
   const navigate = useNavigate();
@@ -39,7 +39,7 @@ function TransactionDetails() {
       <ul className="trans-details">
         <h2>{transaction.item_name}</h2>
         <li> Transaction Date: {transaction.date}</li>
-        <li> Amount: $ {transaction.amount}</li>
+        <li> Amount: ${transaction.amount}</li>
         <li>From: {transaction.from}</li>
         <li>Transaction category: {transaction.category}</li>
         <li>Transaction Type: {transaction.type}</li>
@@ -47,7 +47,7 @@ function TransactionDetails() {
       <div className="showNavigation">
         <div>
           <Link to={`/transactions`}>
-            <button>GO BACK  {undo}</button>
+            <button>GO BACK {undo}</button>
           </Link>
         </div>
         <div>
